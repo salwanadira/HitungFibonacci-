@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package hitungfibonacci;
+import java.math.BigInteger;
 import java.util.Scanner;
 public class Tugas01 {
     private static void tampilJudul(String identitas)
@@ -24,12 +25,29 @@ public class Tugas01 {
         
         return n;
     }        
+    
+    private static BigInteger fibo(int n)
+    {
+        BigInteger[] hasil = new BigInteger[n];
+        
+        hasil[0] = BigInteger.ONE;
+        hasil[1] =  BigInteger.ONE;
+        
+        for (int i = 2; i < n; i++) 
+        {
+            hasil[i] = hasil[i-1].add(hasil[i-1]);
+            
+        }
+        return hasil[n-1];
+    }        
     public static void main(String[] args) {
        String identitas = "Salwa Nadira Adzani / X RPL 3 / 34";
        
        tampilJudul(identitas);
        
        int n = tampilInput();
+       
+       BigInteger hasil = fibo(n);
     }
     
     
