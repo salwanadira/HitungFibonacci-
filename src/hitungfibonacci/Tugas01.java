@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package hitungfibonacci;
-
+import java.util.Scanner;
 public class Tugas01 {
     private static void tampilJudul(String identitas)
     {
@@ -14,9 +14,23 @@ public class Tugas01 {
         System.out.println("1, 1, 2, 3, 5, 8, 13, 21, ... dst.\n");
         
     }        
+    
+    private static int tampilInput() 
+    {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        
+        return n;
+    }        
     public static void main(String[] args) {
        String identitas = "Salwa Nadira Adzani / X RPL 3 / 34";
        
        tampilJudul(identitas);
+       
+       int n = tampilInput();
     }
+    
+    
 }
