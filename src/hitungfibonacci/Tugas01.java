@@ -15,8 +15,8 @@ public class Tugas01 {
         
     }        
     public static void main(String[] args) {
-        String identitas = "Salwa Nadira Adzani / X RPL 3 / 34";
-        
-        tampilJudul(identitas);
+       String identitas = "Salwa Nadira Adzani / X RPL 3 / 34";
+       
+       tampilJudul(identitas);
     }
 }
